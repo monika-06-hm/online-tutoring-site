@@ -1,0 +1,110 @@
+function MYFUNC() {
+var name =
+document.forms["RegForm"]["first_name"];
+var name1 =
+document.forms["RegForm"]["last_name"];
+var email =
+document.forms["RegForm"]["EMail"];
+var phone =
+document.forms["RegForm"]["Telephone"];
+var what =
+document.forms["RegForm"]["Subject"];
+var password =
+document.forms["RegForm"]["Password"];
+var address =
+document.forms["RegForm"]["Address"];
+var income =
+document.forms["RegForm"]["income"];
+var percentage =
+document.forms["RegForm"]["p_perc"];
+var hobby =
+document.forms["RegForm"]["hobby"];
+var awards =
+document.forms["RegForm"]["awards"];
+var mobile =
+document.getElementById("mobile").value;
+if(mobile == ""){
+document.getElementById("messages").innerHTML="**please
+fill mobile number";
+return false;
+}
+if(isNaN(mobile)){
+document.getElemnetById("messages").innerHTML=" enetr only
+Numeric value";
+return false;
+}
+if(mobile.length<10){
+document.getElemnetById("messages").innerHTML=" mobile number
+must be 10 digits";
+return false;
+}
+if(mobile.length>10){
+document.getElemnetById("messages").innerHTML=" mobile number
+must be 10 digits";
+return false;
+}
+if((mobile.charAt(0) != 9) (mobile.charAt(0) !=8 ) &&
+(mobile.charAt(0) !=7)){
+document.getElementById("messages").innerHTML="Mobile number
+must start with 9 ,8 and 7";
+return false;
+}
+if (name.value == "") {
+window.alert("Please enter your name.");
+name.focus();
+return false;
+}
+if (name1.value == "") {
+window.alert("Please enter your name.");
+name.focus();
+return false;
+}
+if (address.value == "") {
+window.alert("Please enter your address.");
+address.focus();
+return false;
+}
+if (email.value == "") {
+window.alert(
+"Please enter a valid e-mail address.");
+email.focus();
+return false;
+}
+if (phone.value == "") {
+window.alert(
+"Please enter your telephone number.");
+phone.focus();
+return false;
+}
+if (password.value == "") {
+window.alert("Please enter your password");
+password.focus();
+return false;
+}
+if (what.selectedIndex < 1) {
+alert("Please enter your course.");
+what.focus();
+return false;
+}
+if (income.value == ""){
+window.alert("enter your income");
+income.focus();
+return false;
+}
+if (percentage.value == ""){
+window.alert("enter your percentage");
+percentage.focus();
+return false;
+}
+if(hobby.value == ""){
+window.alert("enter your hobbies");
+hobby.focus();
+return false;
+}
+if(awards.value == ""){
+window.alert("enter awards recieved");
+awards.focus();
+return false;
+}
+return true;
+}

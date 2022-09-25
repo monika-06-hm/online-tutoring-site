@@ -1,0 +1,116 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Noto+Serif+Kannada:wght@300&display=swap');
+*{
+box-sizing: border-box;
+}
+.fles{
+display: flex;
+box-sizing: border-box;
+width: 100%;
+border: 1px solid #e2e2e2;
+border-radius: 5px;
+color: #493d42;
+align-content: center;
+align-items: center;
+padding: 10px;
+justify-content: space-between;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+form {
+margin:10px;
+width: 600px;
+display:flex;
+flex-direction: column;
+}
+body{
+padding-top: 12px;
+background-image: url("bgnew.jpg");
+background-repeat:repeat-y;
+background-size: cover;
+background-color: #e2e2e2;
+}
+.wrapper{
+width: 100%;
+height: auto;
+display: flex;
+justify-content: space-around;
+align-items: flex-start;
+padding: 25px 30px;
+}
+.input_wrapper{
+flex:1;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: flex-start;
+min-height: 10vh;
+margin-left: 4px;
+}
+input,select{
+height: 5vh;
+border: none;
+border-radius: 5px;
+font-family: 'sans-sarif';
+padding: 2px 5px;
+font-size: 1rem;
+font-weight: 600;
+outline-style: none;
+background-color: #36454F;
+}
+textarea{
+background-color:#36454F;
+}
+fieldset{
+width: 100%;
+margin-left: 61%;
+border: 2px solid rgb(124, 100, 100);
+}
+.banner-container{
+display: flex;
+color: #e2e2e2;
+margin-left:140px ;
+margin-right: 130px;
+margin-bottom: 20px;
+background-color: #36454F;
+border-radius: 10px;
+}
+.banner-container>img{
+float: left;
+clear:both;
+}
+.banner-container2{
+text-align: center;
+}
+.button-wrapper{
+width:50%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+input[type="submit"],input[type="reset"]{
+display: flex;
+align-items: center;
+background-color: #36454F;
+color: #e2e2e2;
+border: none;
+padding: 4px;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+background-color: rgba(10, 240, 86, 0.555);
+cursor: pointer;
+}
+input,textarea,select{
+border-radius: 5px;
+border: 0.03px solid #36454F;
+}
+input:hover,textarea:hover,select:hover{
+background-color: #f2f2f2;
+}
+h3,#h1{
+font-family: 'Anton', sans-serif;
+color: #36454F;
+}
+.dateo{
+    color: rgb(248, 246, 246);
+}
